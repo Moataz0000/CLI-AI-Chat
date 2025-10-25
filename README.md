@@ -1,9 +1,17 @@
 # 🗣️ Talky
 
+
+
 **Talky** is a lightweight command-line AI chat tool that lets you interact with an AI model directly from your terminal.  
 Minimal by design, it’s perfect for quick questions, code generation, prototyping ideas, or integrating AI into your developer workflow.
 
 ---
+
+<video src="demo.mov" width="640" controls>
+  Your browser does not support the video tag.
+</video>
+
+
 
 ## 🚀 Features
 
