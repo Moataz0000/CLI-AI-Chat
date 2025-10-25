@@ -39,7 +39,6 @@ class TalkyCLI(cmd.Cmd):
             return
         
         try:
-            # Start the live spinner
             spinner = ThinkingTimer("Thinking")
             spinner.__enter__()
 
@@ -49,11 +48,9 @@ class TalkyCLI(cmd.Cmd):
                 contents=f"Please provide a short, professional answer to the following question: {question}"
             )
 
-            # Stop the spinner and clear its line
             spinner.stop()
             clear_last_lines(1)
 
-            # Show response nicely
             print(colored(resp.text.strip(), "cyan"), end="\n")
             print("-"*100, end="\n")
 
@@ -70,11 +67,9 @@ class TalkyCLI(cmd.Cmd):
         self.ask_ai(line)
 
     def default(self, line: str):
-        """Treat any non-command input as a question."""
         self.ask_ai(line)
 
     def emptyline(self):
-        """Don't repeat the last command when the user hits Enter."""
         pass
 
 
