@@ -1,20 +1,27 @@
-# Talky
+# 🗣️ Talky
 
-Talky is a lightweight command-line chat interface that lets you interact with an AI model directly from your terminal. Minimal by design, it’s perfect for quick queries, prototyping, and incorporating AI responses into shell scripts or developer workflows.
+**Talky** is a lightweight command-line AI chat tool that lets you interact with an AI model directly from your terminal.  
+Minimal by design, it’s perfect for quick questions, code generation, prototyping ideas, or integrating AI into your developer workflow.
 
-## Usage
+---
 
-From the repository root run:
+## 🚀 Features
+
+- 💬 Chat with an AI assistant directly from your terminal  
+- ⚡ Lightweight and fast – no unnecessary dependencies  
+- 🧠 Great for coding help, explanations, and automation  
+- 🔌 Easy setup with your own API key  
+- 🧩 Simple to extend and integrate into scripts
+
+---
+
+## 🛠️ Installation
+
+Clone the repository and install dependencies (if any):
 
 ```bash
-python main.py
-```
+git https://github.com/Moataz0000/CLI-AI-Chat
 
-## Files
+pip install -r requirements.txt
 
-- `main.py` — entry point for the CLI chat
-- `formater.py` — response formatting utilities
-- `timer.py` — simple timing helpers
-
-If you want the description changed to reference a specific model provider, streaming, or conversation history, tell me which details to include and I’ll update it.
-Talky
+python3 talky.py
