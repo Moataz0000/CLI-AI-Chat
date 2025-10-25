@@ -6,26 +6,9 @@
 Minimal by design, it’s perfect for quick questions, code generation, prototyping ideas, or integrating AI into your developer workflow.
 
 ---
+
 ## 🎬 Demo
-
-[![Play demo (click to open)](./demo-thumbnail.png)](./demo.mov)
-
-> Note: GitHub does not play .mov files inline. Convert to GIF or MP4 for an inline preview, or link to the file.
-
-If you have a GIF:
 ![Demo GIF](./demo.gif)
-
-Or provide a direct link:
-[Open demo.mov](./demo.mov) · [Open demo.mp4](./demo.mp4)
-
-Quick conversion examples (ffmpeg):
-```bash
-# Convert to MP4 (recommended)
-ffmpeg -i demo.mov -c:v libx264 -crf 23 -preset medium demo.mp4
-
-# Convert to GIF for inline preview
-ffmpeg -i demo.mov -vf "fps=15,scale=680:-1:flags=lanczos" -loop 0 demo.gif
-```
 
 
 ## 🚀 Features
