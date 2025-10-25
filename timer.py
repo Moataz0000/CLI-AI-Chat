@@ -3,14 +3,13 @@ import time
 import threading
 from termcolor import colored
 
-# Small utility that shows a live timer on one terminal line
 class ThinkingTimer:
     def __init__(self, label="Thinking"):
         self.label = label
         self._stop = threading.Event()
         self._thread = None
         self._start = None
-        self._frames = ["⠋","⠙","⠸","⠴","⠦","⠇"]  # simple spinner
+        self._frames = ["⠋","⠙","⠸","⠴","⠦","⠇"]  
 
     def __enter__(self):
         self._start = time.perf_counter()
@@ -30,7 +29,7 @@ class ThinkingTimer:
             if self._thread:
                 self._thread.join()
             # Clear the line and show cursor again
-            sys.stdout.write("\r\033[2K")  # carriage return + clear line
+            sys.stdout.write("\r\033[2K")  
             sys.stdout.write("\033[?25h")
             sys.stdout.flush()
 
@@ -43,9 +42,7 @@ class ThinkingTimer:
         i = 0
         while not self._stop.is_set():
             elapsed = self.elapsed()
-            # Build the status line
             msg = f"{self._frames[i % len(self._frames)]} {self.label}… {elapsed:0.1f}s"
-            # Print in place
             sys.stdout.write("\r" + colored(msg, "yellow"))
             sys.stdout.flush()
             i += 1
