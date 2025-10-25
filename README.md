@@ -7,9 +7,17 @@ Minimal by design, it’s perfect for quick questions, code generation, prototyp
 
 ---
 
-<video src="demo.mov" width="640" controls>
-  Your browser does not support the video tag.
-</video>
+## 🎬 Demo
+
+[![Play demo (click to open)](./demo-thumbnail.png)](./demo.mov)
+
+If you want an inline preview in GitHub, convert the video to an animated GIF and use:
+
+![Demo GIF](./demo.gif)
+
+Or provide a direct link:
+
+[Open demo.mov](./demo.mov)
 
 
 
